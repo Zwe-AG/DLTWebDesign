@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Literals (Js Object)</title>
+</head>
+<body>
+    <script type="text/javascript">
+          let student = { name:"kyaw kyaw", age: "20"};
+        //   console.log(typeof student.name);
+             console.log(student.name);
+
+             const person = {
+                 firstname:"Zwe",
+                 lastname:"Htet",
+                 hasCar:true,
+                 age:19,
+                 email:"zwehtetag2019@gmail.com",
+                 address:{
+                     street:'3rd',
+                     city:'Yangon',
+                     No:'615',
+                 }
+             }
+             console.log(person);
+             console.log(person.address.street);
+
+             var obj = {
+                 fullname:"Zwe Htet Aung",
+                 married:false,
+                 age:19,
+                 phone:09123456,
+                 address:{
+                     street:"3/635",
+                     city:"Yangon",
+                 },
+                 hobbies:["eat","code","music","drink","sport"],
+             };
+
+             console.log(obj);
+             console.log(obj.fullname);
+             console.log(obj.married);
+             console.log(obj.address.city);
+             console.log(obj.hobbies[2]);
+
+          
+    </script>
+</body>
+</html>
+<!-- 
+css
+selectors{
+    properties:value;
+    font-size:20px;
+    color:blue;
+}
+
+js object
+variable = {
+    key1:value,
+    key2:value,
+    key3:value
+}; -->

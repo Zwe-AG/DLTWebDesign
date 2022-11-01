@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Local Storge</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      //Create
+
+      //   localStorage.setItem("Name", "Zwe Htet Aung");
+      //   localStorage.setItem("Age", 19);
+      //   localStorage.setItem("City", "Yangon");
+
+      //Read
+
+      //   let getName = localStorage.getItem("Name");
+      //   let getCity = localStorage.getItem("City");
+      //   let getAge = localStorage.getItem("Age");
+      //   console.log(getName, getCity, getAge);
+      //   console.log(typeof getAge); string
+
+      //Update
+
+      //   Method1
+      //   localStorage.setItem("Name", "William");
+
+      //Method2
+      //   localStorage.Age = 30;
+
+      //Delete
+
+      // Method1(single)
+      //localStorage.removeItem("Name");
+      // localStorage.removeItem("Age");
+      //localStorage.removeItem("City");
+      // Method2
+      //localStorage.clear();
+
+      //Session Storage
+      sessionStorage.setItem("Name", "Min Min");
+      sessionStorage.setItem("age", 23);
+      let getNameMin = sessionStorage.getItem("Name");
+      let getAgeMin = sessionStorage.getItem("age");
+      console.log(getNameMin, getAgeMin);
+      sessionStorage.removeItem("Name");
+      // sessionStorage.clear();
+    </script>
+  </body>
+</html>
+
+<!-- 
+Cookies           Vs          Local Storage             Vs        Session Storage
+4kp                           5mb to 10mb                         5mb
+sv/br                         br                                  br
+manual                       manual                              close tab
+(close tab and open again and have still data) 
+all tabs (permission)         all tabs                            private tab 
+sharing (another tab)                                             close tab and not share-->
+
+<!-- 14LM -->

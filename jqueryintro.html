@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="wel" class="come">Welcome to Jquery</h1>
+      <h2 id="mm" class="mm">Welcome to Myanmar</h2>
+      <h3 id="jp" class="jp">Welcome to Japan</h3>
+      <h5 id="ko" class="ko">Welcome to Korea</h5>
+      <h6 id="th" class="th">Welcome to Thailand</h6>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        console.log("I am working");
+        console.warn("I am working warn");
+        console.error("I am working error");
+        // window.alert("I am working alert");
+        // if (window.confirm("Are you sure")) {
+        //   console.log("Yes");
+        // } else {
+        //   console.log("No");
+        // }
+
+        // const geth1 = document.getElementById("wel");
+        // console.log(geth1);
+
+        // $("#wel");
+        // $(".come");
+        // $("h1");
+
+        // $("h1").fadeOut(1000);
+        // $(".mm").fadeOut(2000);
+        // $("#th").fadeOut(3000);
+
+        // $("#jp").fadeTo(3000, 0.5); // second and opacity
+        // $("#ko").fadeToggle(2000); // one times disappear
+        // $("#ko").fadeToggle(1000); // one times appear
+        // $("#ko").fadeToggle(); // one times disappear
+        // $("#ko").fadeToggle(); // one times appear
+      });
+    </script>
+  </body>
+</html>

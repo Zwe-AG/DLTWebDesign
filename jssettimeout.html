@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Set Time Out</title>
+  </head>
+  <body>
+    <!-- 21 April 2022  -->
+    <div>
+      <h1 id="greeting">Welcome to our site</h1>
+    </div>
+
+    <hr />
+
+    <div>
+      <button type="button" id="startalert" class="" onclick="startbtn()">
+        Start Alert
+      </button>
+      <button type="button" id="stopalert" class="" onclick="stopbtn()">
+        Stop Alert
+      </button>
+    </div>
+
+    <hr />
+
+    <div>
+      <form action="" method="">
+        <input type="text" name="url" id="url" class="" />
+        <input
+          type="button"
+          name=""
+          id="btnurl"
+          value="Go URL"
+          class=""
+          onclick="gourl()"
+        />
+        <input
+          type="button"
+          name=""
+          id="favbtn"
+          value="Fav Url"
+          onclick="favurl('https://linkedin.com')"
+        />
+      </form>
+    </div>
+
+    <hr />
+
+    <!-- 22 April 2022  -->
+
+    <div class="">
+      <img
+        id="img1"
+        class=""
+        width="200px"
+        height="200px"
+        alt=""
+        onmouseover="imgover()"
+        onmouseout="imgout()"
+      />
+    </div>
+
+    <hr />
+
+    <div>
+      <img src="./img/icon4.png" id="myimg" class="" width="100" alt="" />
+      <select name="size" id="size" class="" onchange="imgsize(this)">
+        <option selected disabled>Select</option>
+        <option value="50">Small</option>
+        <option value="250">Medium</option>
+        <option value="350">Large</option>
+      </select>
+    </div>
+
+    <script type="text/javascript">
+      //   window.setInterval(newMessage, 2000); //repeat working
+      window.setTimeout(newMessage, 3000); // one time working
+      function newMessage() {
+        document.getElementById("greeting").textContent = "See you later...";
+      }
+
+      //   For alert
+      function mypopup() {
+        window.alert("welcome sir");
+      }
+
+      let mytimer; // global
+
+      function startbtn() {
+        mypopup();
+        // window.setInterval(startbtn, 2000);
+        mytimer = window.setTimeout(startbtn, 2000);
+      }
+      function stopbtn() {
+        window.clearInterval(mytimer);
+      }
+
+      //GO URL
+
+      function gourl() {
+        let geturl = document.getElementById("url").value;
+        //   console.log(geturl);
+        window.location = "https://" + geturl;
+      }
+
+      function favurl(linkin) {
+        // window.location = linkin;
+        // console.log("hay");
+      }
+
+      //   Mouse Event
+      //Image Change
+      let getimg1 = document.getElementById("img1");
+      window.onload = function () {
+        getimg1.src = "./img/icon1.png";
+      };
+
+      function imgover() {
+        // alert("hi");
+        getimg1.src = "./img/icon2.png";
+      }
+
+      function imgout() {
+        // alert("hi");
+        getimg1.src = "./img/icon3.png";
+      }
+
+      //Image Size
+      function imgsize(t) {
+        // let getsize = document.getElementById("size").value;
+        // console.log(getsize);
+        // document....  or  this keyword parameter
+        // console.log(t);
+        // console.log(t.value);
+        let getsize = t.value;
+        let getmyimg = document.getElementById("myimg");
+        getmyimg.width = getsize;
+      }
+    </script>
+  </body>
+</html>

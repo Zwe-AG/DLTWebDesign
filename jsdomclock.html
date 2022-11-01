@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Clock</title>
+  </head>
+  <style type="text/css">
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <body>
+    <!-- 10 April 2022-->
+    <h3 id="display"></h3>
+    <script type="text/javascript">
+      let getDisplay = document.getElementById("display");
+      //   console.log(getDisplay);
+
+      const days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      //console.log(days);
+      //console.log(days[1]); //Monday
+      //console.log(days[5]); //Friday
+      function startClock() {
+        let getdate = new Date();
+        // console.log(getDate);
+        let gethours = getdate.getHours();
+        // console.log(getHours);
+        let getmins = getdate.getMinutes();
+        // console.log(getMins);
+        let getsecs = getdate.getSeconds();
+        // console.log(getSecs);
+        let getdays = getdate.getDay();
+        // console.log(getDays);
+        let getAmPm;
+        switch (gethours > 12) {
+          case true:
+            getAmPm = "PM";
+            gethours = gethours - 12;
+            break;
+          case false:
+            getAmPm = "AM";
+            break;
+        }
+
+        let setclock =
+          gethours +
+          ":" +
+          getmins +
+          ":" +
+          getsecs +
+          " " +
+          getAmPm +
+          " " +
+          days[getdays];
+        // let setclock = `${gethours}:${getmins}:${getsecs} ${getAmPm} ${days[getdays]}`;
+        getDisplay.textContent = setclock;
+      }
+
+      startClock(); // function die
+      setInterval(startClock, 1000);
+      //startClock(); // function die
+    </script>
+  </body>
+</html>
+
+<!--  10DC  -->

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Homework 3 </title>
+</head>
+<body>
+    <center><img src="myanmar.jpeg" alt="myanmar"  width="20%"></center>
+    <br>
+    <h2 align="center"><u>Welcome To 2020 Election</u></h2>
+    <p align="center">Citizen ID : WDF6350</p>
+
+    <hr>
+
+    <table border="1" width="30%" cellspacing="3px" align="center">
+        <thead>
+            <tr>
+                <th colspan="3" bgcolor="yellow">Election Form</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>Leader Name:</b></td>
+                <td><input type="text" name="leader" id="leader" placeholder="Enter leader name"></td>
+            </tr>
+            <tr>
+                <td><b>Your Name:</b></td>
+                <td><input type="text" name="leader" id="leader" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <td><b>Email:</b></td>
+                <td><input type="email" name="email" id="email" placeholder="Enter your email"></td>
+            </tr>
+            <tr>
+                <td><b>Passcode:</b></td>
+                <td><input type="text" name="passcode" id="passcode" placeholder="Enter your passcode"></td>
+            </tr>
+            <tr>
+                <td><b>Parties</b></td>
+                <td>
+                    <input type="radio" name="party" id="nld" value="0"><label for="nld">NLD</label>
+                    <input type="radio" name="party" id="usdp" value="1"><label for="usdp">USDP</label>
+                    <input type="radio" name="party" id="ppp" value="2"><label for="ppp">PPP</label>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Location:</b></td>
+                <td>
+                    <select name="city" id="city">
+                        <option selected disabled>Choose City</option>
+                        <option value="yg">Yangon</option>
+                        <option value="md">Mandalay</option>
+                        <option value="bg">Bago</option>
+                        <option value="km">Kamayut</option>
+                        <option value="no">North Okkalapa</option>
+                        <option value="so">South Okkalapa</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="checkbox" name="stick" id="stick"><label for="stick">I accept all the regulation of election community.</label>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" align="right"> 
+                    <input type="reset" name="reset" id="reset" class="" value="cancel">
+                    <input type="submit" name="submit" id="submit" class="" value="submit">
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <p align="center">Already register! <a href="#">Click Here to Login</a></p>
+</body>
+</html>

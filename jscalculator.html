@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculator</title>
+</head>
+
+<body>
+  <form action="" method="">
+    <div>
+      <label for="firstnumber">First Number</label>
+      <input type="number" name="firstnumber" id="firstnumber" class="" />
+    </div>
+    <br />
+    <br />
+    <div>
+      <label for="secondnumber">Second Number</label>
+      <input type="number" name="secondnumber" id="secondnumber" class="" />
+    </div>
+    <br />
+    <button type="button" id="add" class="" onclick="sign('+')">+</button>
+    <button type="button" id="sub" class="" onclick="sign('-')">-</button>
+    <button type="button" id="multi" class="" onclick="sign('*')">*</button>
+    <button type="button" id="div" class="" onclick="sign('/')">/</button>
+    <button type="button" id="mod" class="" onclick="sign('%')">%</button>
+    <button type="button" id="cal" class="" onclick="calculate()">
+      Calculate
+    </button>
+
+    <input type="hidden" name="tempsign" id="tempsign" class="" />
+    <input type="text" name="result" id="result" class="" />
+  </form>
+  <script type="text/javascript">
+    function sign(sign) {
+      // console.log("I am Zwe Htet" + sign);
+      document.getElementById("tempsign").value = sign;
+    }
+    function calculate() {
+      let num1 = Number(document.getElementById("firstnumber").value);
+      let num2 = Number(document.getElementById("secondnumber").value);
+      // console.log(num1, num2);
+      let getsign = document.getElementById("tempsign").value;
+      // console.log(num1, getsign, num2);
+
+      let cal;
+      switch (getsign) {
+        case "+":
+          cal = num1 + num2;
+          break;
+        case "-":
+          cal = num1 - num2;
+          break;
+        case "*":
+          cal = num1 * num2;
+          break;
+        case "/":
+          cal = num1 / num2;
+          break;
+        case "%":
+          cal = num1 % num2;
+          break;
+        default:
+          window.alert("No sign");
+      }
+
+      document.getElementById("result").value = cal;
+    }
+  </script>
+</body>
+
+</html>

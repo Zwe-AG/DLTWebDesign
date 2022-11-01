@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Template String</title>
+</head>
+<body>
+    
+    <ul>
+        <li id="m1">Name: Zwe Htet Aung</li>
+        <li>Age: 19</li>
+        <li>Job: Web Developer</li>
+        <li>City: Yangon</li>
+    </ul>
+
+    <!-- <button onclick="document.getElementById('m1').innerHTML='Name: William'">Change</button> -->
+
+    <script type="text/javascript">
+           const name = "kyaw kyaw";
+           const age = 20;
+           const job = "Software Engineer";
+           const city = "Mandalay";
+
+           let myliststyle; //okay
+           //var myliststyle; okay
+           //const myliststyle; error
+
+
+        //Without Template String (es5)
+        //myliststyle = '<ul><li>Name: '+name+' </li>  <li>Age: '+age+' </li> <li>Job: '+job+' </li><li>city: '+city+'  </li><ul> ';
+        
+         myliststyle = '<ul>' + 
+         ' <li>Name: '+name+' </li> '  + 
+         ' <li>Age:   '+age+' </li> ' +
+         '<li>Job: '+job+' </li> ' +
+         '<li>city: '+city+'  </li> ' +
+         '<ul> ';
+
+        document.write(myliststyle);
+
+
+        //With Template String (es6)
+        myliststyle = 
+        `
+        <ul>
+            <li>Name: ${name}</li>
+            <li>Name: ${age}</li>
+            <li>Name: ${job}</li>
+            <li>Name: ${city}</li>
+        </ul>
+        `;
+        document.write(myliststyle);
+    </script>
+</body>
+</html>

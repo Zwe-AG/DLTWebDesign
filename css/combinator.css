@@ -1,0 +1,121 @@
+/*tag to tag/ span twy a myrr gyi htl ka something 
+ko pl change chin yin use ya tl tag ta khu nae ta khu 
+kyrr mhr one spacebar*/
+/*Tag to Tag*/
+/*div span{
+	color:red;
+}*/
+
+/*Tags to Tag*/
+
+/*div span p{
+	color:red;
+}*/
+
+/*Tag to Class*/
+/*div .address{
+	color:blue;
+}*/
+
+/*multi tag to class*/
+/*div span .name{
+	color:blue;
+}*/
+
+/*Multi Tags to Same Class*/
+/*tag ko pyy htrr tae class ko call chin yin space ma lo*/
+/*div span small.name{
+	color:tomato;
+}*/
+
+/*Multi Class to Class*/
+/*.bank .money b.currency{
+	color:red;
+}*/
+
+/*Tag to Multi Class*/
+
+/*div .name .age{
+	color:red;
+}*/
+
+/*Class to Tag*/
+/*.container b{
+	color:red;
+}*/
+
+/*Class to Multi Tag*/
+
+/*.container b span{
+	color:red;
+}*/
+
+/*Same Class*/
+
+/*.mobile.jpn{
+	color:green;
+}
+.mobile.cn{
+	color:blue;
+}
+
+.mobile.us{
+	color:red;
+}*/
+
+/*Class to Same Class*/
+/*vehicle ka parent car jpn ka child ma 
+loh space chrr*/
+/*.vehicle .car.jpn{
+	color:red;
+}
+.vehicle .car.cn{
+	color:blue;
+}
+.vehicle .car.indo{
+	color:green;
+}*/
+
+/*Class to Tag by group selector*/
+/*.div1 p, .div1 b{
+	color:purple;
+}*/
+
+/*Child Selector ( > ) */
+
+.div2 > p {
+  color: red;
+}
+
+/*Sibling Selectors (2 types)*/
+/*(i) General Sibling Selector ( ~ )*/
+.div4 ~ i {
+  color: red;
+}
+
+/*(ii)Adjcent Sibling Selector*/
+
+.div9 + b {
+  color: red;
+}
+/* 21CBM */
+
+/* span ~ p {
+  color: aqua;
+}
+
+span ~ h1 {
+  color: aqua;
+}
+
+li:first-of-type {
+	color: red;
+  }
+
+li:first-of-type + li {
+  color: red;
+}
+
+li:first-of-type + li + li {
+  color: red;
+} */

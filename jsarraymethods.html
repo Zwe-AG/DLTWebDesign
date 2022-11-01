@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Methods (default Functions)</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //Array Methods
+        let arrcolors = ["red","green","orange","tomato","violet"];
+        console.log(arrcolors);
+        console.log(arrcolors.length);
+        console.log(typeof arrcolors.length);
+
+        console.log(arrcolors[3]);
+        console.log(arrcolors.indexOf("violet"));
+
+        //Character Array in Js
+        let myfriend = "Aung Kyaw Kyaw";
+        console.log(Array.isArray(arrcolors));//result = true
+        console.log(Array.isArray(myfriend));//result = false
+
+        console.log(arrcolors);
+        console.log("Array to String by tostring = " + arrcolors.toString());    
+        console.log("Array to String by join = " + arrcolors.join("/"));  
+
+        const n = ["red","black","green","silver"];
+        console.log(n);
+
+        n[1] = "pink";
+        n[4] = "blue";
+        console.log(n);
+        console.log(n[4]);
+        // console.log("Array to String by tostring = " + n.toString());
+
+        //Add new value to array (add to end)
+        n.push("gold");
+        n.push("orange");
+        n.push("white","grey");
+        console.log(n);
+
+        //Add new value to array (add to front)
+        n.unshift("tomato");
+        console.log(n);
+        console.log(n[4]);
+
+        //Remove value & index (take off from front)
+         n.shift();
+         n.shift();
+         console.log(n);
+
+        //Remove value & index (take off from end)
+         n.pop();
+         n.pop();
+         console.log(n);
+
+        //Remove only value but did not destroy index
+        delete n[2];
+        console.log(n);
+        console.log(n.length);
+        console.log(n[2]);//undefined
+
+        let q = n.splice(0,5); //index,space
+        console.log(q);
+
+        //Array Combine
+
+        let arr1 = ["Zaw Zaw","Maung Maung","Kyaw Kyaw","Min Min"];
+        let arr2 = ["Nu Nu","Aye Aye","Lu Lu","Ya Ya"];
+        let arr3 = [100,200,300];
+        console.log(arr1+arr2);//oky but string
+        console.log(arr1.concat(arr2));
+        console.log(arr2.concat(arr1));
+        console.log(arr1.concat(arr1));
+        console.log(arr2.concat(arr3));
+
+        //Array Sorting
+        const arr4 = arr1.concat(arr2);
+        console.log(arr4);
+        console.log(arr4[4]);
+
+        //Sort a to z (only can work string  )
+        console.log(arr4.sort());
+
+        //Reverse cannot order z to a but if you order that , can reverse that
+        console.log(arr4.reverse());
+
+        //Sort & Eeverse cannot work on numbers 
+        let arr5 = [700,200,100,50,150,10,600];
+        console.log(arr4.sort());
+        console.log(arr4.reverse());
+
+        </script>
+</body>
+</html>
+
+<!-- 24AR -->

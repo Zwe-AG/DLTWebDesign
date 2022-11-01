@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let val;
+
+        //exact value
+        val = 2.9;//result 2.9
+        val = 2.4;//result 2.4
+
+        val = Math.round(2.8);//result 3
+        val = Math.round(2.2);//result 2
+
+        val = Math.ceil(2.8);//result 3
+        val = Math.ceil(2.4);//result 3
+        val = Math.ceil(2.0);//result 2
+
+        val = Math.floor(2.8);//result 2
+        val = Math.floor(2.4);//result 2
+
+        val = Math.sqrt(64);//result 8
+        val = Math.sqrt(49);//result 7
+        val = Math.sqrt(25);//result 5
+
+        //pow = power
+        val = Math.pow(7,2);//result 49 
+        val = Math.pow(3,2);//result 9
+
+        val = Math.abs(100);//result 100   absolute odd to event
+        val = Math.abs(-200);//result 200  absolute odd to event
+
+        val = Math.min(6,5,8,10);//result 5  search minimum number
+        val = Math.min(6,5,8,10,0,-2);//result -2  search minimum number
+        val = Math.max(6,5,8,10);//result 10  search maximum number
+
+        //Digit Only
+        // val = Math.random();
+        // val = Math.random() * 1000; 
+
+        val = Math.floor(Math.random()*10000);
+
+        console.log(val);
+    </script>
+</body>
+</html>

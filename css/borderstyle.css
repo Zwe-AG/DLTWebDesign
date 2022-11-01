@@ -1,0 +1,84 @@
+.borderstyle1{
+    border-style: solid;
+}
+.borderstyle2{
+    border-style: dotted;
+}
+.borderstyle3{
+    border-style: dashed;
+}
+.borderstyle4{
+    border-style: double;
+}
+.borderstyle5{
+    border-style: inset;
+}
+.borderstyle6{
+    border-style: outset;
+}
+
+.bddesign{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+
+    /* border-radius: 50%; */
+    /* border-radius: 100%; */
+    border-radius: 10px 50px;
+    /* border-top-left-radius: 30px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 80px;
+    border-bottom-left-radius: 100px; */
+    cursor: pointer;
+}
+
+li{
+    /* list-style-type: square; */
+    /* list-style-type: circle; */
+    /* list-style-type: none; */
+    /* list-style: none; */
+    /* list-style-type: decimal; */
+    list-style-type: decimal-leading-zero;
+    border: 1px solid red;
+    /* border: 1px; */
+    /* border-style: solid; */
+    /* border-color: orange; */
+    list-style-position: outside;
+    /* list-style-position: inside; */
+}
+
+input[type="text"],input[type="number"]{
+    width: 300px;
+    background-color: aquamarine;
+    color: #fff;
+    border-radius: 20px;
+}
+
+
+input[type="email"]{
+    width: 300px;
+    background-color: royalblue;
+    color: #fff;
+    border-radius: 20px;
+}
+
+body{
+    background-image: url("../img/icon1.png");
+    background-position: center;
+    /* background-position: right; */
+    /* background-position: left; */
+    /* background-position: top; */
+    /* background-position: bottom; */
+    /* background-position: right top; */
+    /* background-position: left top; */
+    background-repeat: no-repeat;
+}
+
+/* 
+el(tag)
+id(#)
+cl(.)
+uni(*)
+group(,) si/mul
+attribute
+*/

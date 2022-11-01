@@ -1,0 +1,214 @@
+<html>
+  <head>
+    <title>Form Elements</title>
+  </head>
+  <body>
+    <h1>Form Tag</h1>
+
+    <fieldset>
+      <legend>This is sample form &#x000A9;</legend>
+      <form action="" method="" enctype="multipart/form-data">
+        <label for="firstname">First Name</label>
+        <input
+          type="text"
+          name="firstname"
+          id="firstname"
+          class=""
+          placeholder="Enter your first name"
+          minlength="4"
+          maxlength="6"
+          autofocus
+        />
+
+        <br />
+
+        <label for="lastname">Last Name</label>
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          class=""
+          placeholder="Enter your last name"
+        />
+
+        <br />
+
+        <label for="password"> Password </label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class=""
+          placeholder="Enter your password"
+          required
+          readonly
+        />
+
+        <br />
+
+        <label for="age">Age</label>
+        <input
+          type="number"
+          name="age"
+          id="age"
+          class=""
+          min="0"
+          max="999"
+          step="2"
+        />
+
+        <br />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class=""
+          placeholder="Enter your email"
+          autocomplete="off"
+        />
+
+        <br />
+
+        <label>Gender</label>
+        <input
+          type="radio"
+          name="gender"
+          id="genderm"
+          class=""
+          value="1"
+        /><label for="genderm">Male</label>
+        <input type="radio" name="gender" id="genderf" class="" value="0" />
+        <label for="genderf">Female</label>
+        <input type="radio" name="gender" id="gendero" class="" value="2" />
+        <label for="gendero">Others</label>
+
+        <br />
+
+        <label>Salary</label>
+        <input
+          type="radio"
+          name="salary"
+          id="salaryc"
+          class=""
+          value="1"
+        /><label for="salaryc">Cash</label>
+        <input type="radio" name="salary" id="salarym" class="" value="0" />
+        <label for="salarym">Mobile Banking</label>
+
+        <br />
+
+        <label>Choose your color</label>
+        <input
+          type="checkbox"
+          name="color"
+          id="colorred"
+          class=""
+          value="1"
+        /><label for="genderm">Red</label>
+        <input
+          type="checkbox"
+          name="color"
+          id="coloryellow"
+          class=""
+          value="2"
+        />
+        <label for="genderf">Yellow</label>
+        <input type="checkbox" name="color" id="colorblue" class="" value="3" />
+        <label for="gendero">Blue</label>
+
+        <br />
+
+        <label for="country">Citizen</label>
+        <select name="country" id="country" class="">
+          <option selected disabled>Choose your country</option>
+          <option value="mm">Myanmar</option>
+          <option value="th">Thailand</option>
+          <option value="sin">Singapore</option>
+          <option value="indo">Indonesia</option>
+          <option value="la">Loas</option>
+        </select>
+
+        <br />
+
+        <label for="role">Role</label>
+        <select name="role" id="role" multiple size="10">
+          <option disabled selected>Choose Role</option>
+          <option value="1">Manager</option>
+          <option value="2">Editor</option>
+          <option value="3">Sales</option>
+          <option value="4">Supervisor</option>
+        </select>
+
+        <br />
+
+        <label for="dob">DOB</label>
+        <input type="date" name="dob" id="dob" class="" />
+
+        <br />
+
+        <label for="bt">Booking Time</label>
+        <input type="time" name="bt" id="bt" class="" />
+
+        <br />
+
+        <label for="datetime">Date Time</label>
+        <input type="datetime-local" name="datetime" id="datetime" class="" />
+
+        <br />
+
+        <label for="volume">Volume</label>
+        <input
+          type="range"
+          name="volume"
+          id="volume"
+          class=""
+          min="0"
+          max="100"
+          value="0"
+        />
+
+        <br />
+
+        <label for="bio">DOB</label>
+        <textarea
+          name="bio"
+          id="bio"
+          rows="10"
+          class=""
+          placeholder="Write something..."
+        ></textarea>
+
+        <br />
+
+        <label for="nrc">NRC</label>
+        <input type="file" name="nrc" id="nrc" class="" multiple />
+
+        <br />
+
+        <input type="hidden" name="test" id="test" class="" />
+
+        <br />
+        <br />
+
+        <input type="reset" name="reset" id="reset" class="" value="cancel" />
+        <input
+          type="submit"
+          name="register"
+          id="register"
+          class=""
+          value="register"
+        />
+        <button type="submit" name="login" id="login" class="">Login</button>
+      </form>
+    </fieldset>
+
+    <!-- 
+    Stand lone Attribute
+    selected disabled checked 
+    -->
+
+    <!-- 10FE WDF -->
+  </body>
+</html>

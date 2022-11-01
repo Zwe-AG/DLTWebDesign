@@ -1,0 +1,72 @@
+body{
+    background: url('../../img/background.jpg');
+}
+
+h1{
+    font-size: 40px;
+    color: white;
+    text-shadow:-12px -5px  4px black ;
+    margin-left: 700px;
+}
+
+fieldset{
+    height: 600px;
+    border: 2px solid silver;
+    text-align: right;
+    font-family: 'Ceviche One', cursive;
+    font-size: 30px;
+    color: yellow;
+}
+
+.box {
+    border: 3px dotted white;
+    width: 400px;
+    height: 320px;
+    margin-left: 600px;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+.box h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    text-shadow:-12px -5px  4px black ;
+}
+
+.box span{
+    color: white;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow:-12px -5px  4px black ;
+}
+.box .A{
+    margin-right: 50px;
+    padding: 6px 20px;
+}
+
+.box .can{
+    margin-left: 50px;
+    background-color: aliceblue;
+    color: black;
+    padding:5px ;
+    clear: both;
+    margin-top: 5px;
+}
+
+.box .sub{
+    margin-left: 10px;
+    background-color: aliceblue;
+    color: black;
+    padding:5px ;
+    clear: both;
+    margin-right: 50px;
+    margin-top: 5px;
+}
+
+.box p{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align: left;
+}

@@ -1,0 +1,45 @@
+/* Selectors */
+/* Element Selector */
+/* Group Selector (,) */
+
+/* singal Selector*/
+h1{
+    color: green;
+}
+/* Group Selector*/
+h2,h3,h4{
+    color: blue;
+}
+
+/* Id selector */
+#myself{
+    color: blue;
+}
+/* span{
+    color: beige;
+}
+
+#myself,span,#sakasa{
+    color: aqua;
+} */
+
+/* Class selector */
+.ph{
+    color: blueviolet;
+}
+.phone{
+    color: chocolate;
+}
+.f30{
+    font-size: 30px;
+}
+
+.hay{
+    color: darkgoldenrod;
+    font-size: 20px;
+}
+
+.hi{
+    color:rgb(247, 93, 41);
+    font-size: 20px;
+}

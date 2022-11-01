@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Set Attribute</title>
+  </head>
+  <body>
+    <div>
+      <h1>Say Something</h1>
+      <p class="p1">Lorem ipsum dolor sit amet.</p>
+      <p class="p2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+        beatae.
+      </p>
+    </div>
+    <script type="text/javascript">
+      //console.log(document.getElementsByTagName("h1"));//HTML COLLECTION(Array)
+      //console.log(document.getElementsByTagName("p"));//HTML COLLECTION(Array)
+      let geth1tag = document.getElementsByTagName("h1");
+      let getptag = document.getElementsByTagName("p");
+      //geth1tag.textContent = "My Story";//No Use
+      geth1tag[0].textContent = "My Story"; //Use
+      getptag[0].textContent = "I am working"; //Use
+
+      // Set Attribute
+      geth1tag[0].setAttribute("style", "text-align:center");
+      getptag[1].setAttribute(
+        "style",
+        "background-color:gray;color:white;border:2px solid green"
+      );
+
+      // Get Attribute
+      console.log(getptag[1].getAttribute("style"));
+      console.log(getptag[0].className);
+      console.log(getptag[0].getAttribute("class"));
+
+      // Remove Attribute
+      getptag[1].removeAttribute("style");
+      getptag[0].removeAttribute("class");
+    </script>
+  </body>
+</html>

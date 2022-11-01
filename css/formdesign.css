@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Ceviche+One&family=Josefin+Slab:ital,wght@0,100;0,500;0,600;0,700;1,500&family=Merriweather+Sans:wght@400;700&family=Montserrat:wght@200;300;400;500;600&family=Nanum+Myeongjo:wght@400;700;800&family=Questrial&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&family=Roboto:wght@300;400&family=Spectral:ital,wght@0,500;1,500&family=Stick&family=Ubuntu:wght@400;500&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Kaku+Gothic+New:wght@300&display=swap");
+
+:root {
+  --wc: #f4f4f4;
+  --gyc: #777;
+  --dbc: #0c09b8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Stick", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* viewport height (vh) */
+  height: 100vh;
+
+  /* scroll is not working */
+  /* margin: 0; */
+  overflow: hidden;
+}
+
+.container {
+  width: 480px;
+  background-color: var(--wc);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.container .form {
+  padding: 30px 40px;
+}
+
+.form .form-group {
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.form-group label {
+  display: block;
+  color: var(--gyc);
+  margin-bottom: 5px;
+}
+
+.form-group .form-control {
+  width: 100%;
+  padding: 10px;
+  font-family: "Stick", sans-serif;
+}
+
+.form-group .form-control::placeholder {
+  /* color: red; */
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.form .btn {
+  font-family: inherit;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: var(--dbc);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.form .btn:hover {
+  background-color: orange;
+}
+
+/* .form .btn:active{
+    background-color: aqua;
+} */
+
+/* 11vh */

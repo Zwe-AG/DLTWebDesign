@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Conversion</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let val;
+      val = "Zaw Zaw";
+      console.log(val);
+      console.log(val.length);
+      console.log(typeof val);
+
+      //Number to String
+
+      val = "20";
+      val = "20";
+      val = `20` + `20`;
+
+      val1 = "20+20";
+      console.log(val1); // 20+20
+      console.log(val1.length);
+      console.log(typeof val1);
+
+      val2 = String(20 + 20);
+      console.log(val2);
+      console.log(val2.length);
+      console.log(typeof val2);
+
+      //Boolean to String
+
+      let hasCar = true;
+      hasCar = String(hasCar);
+      console.log(hasCar);
+      console.log(hasCar.length);
+      console.log(typeof hasCar);
+
+      //Date to String
+
+      let calender = new Date();
+      calender = String(calender);
+      console.log(calender);
+      console.log(calender.length);
+      console.log(typeof calender);
+
+      //Array to String
+
+      let arrayMethod = "[1,2,3,4,5]";
+      arrayMethod = String([1, 2, 3, 4, 5]);
+      console.log(arrayMethod);
+      console.log(arrayMethod.length);
+      console.log(typeof arrayMethod);
+
+      // toString = ().toString();
+      let value = new Date().toString();
+      console.log(value);
+      console.log(value.length);
+      console.log(typeof value);
+
+      // String to Number
+
+      value1 = Number(prompt("Enter"));
+      console.log(value1);
+      console.log(typeof value1);
+      console.log(value1.length);
+
+      value1 = "20";
+      value1 = Number(value1);
+      value1 = +value1;
+
+      value1 = +"aung aung"; // NaN
+      value1 = Number("aung aung"); //NaN
+      value1 = Number([1, 2, 34, 5]); //NaN
+
+      console.log(value1);
+      console.log(typeof value1);
+      console.log(value1.length);
+      console.log(value1.toFixed(2)); //dathama kan a front toe
+
+      value1 = 123.4567;
+      console.log(value1.toFixed(2));
+
+      value2 = "50.897"; // datham kan don't calculate
+      value2 = parseInt(value2);
+      console.log(value2);
+      console.log(typeof value2);
+      console.log(value2.length);
+      console.log(value2.toFixed(2));
+
+      value3 = "50.897";
+      value3 = parseFloat(value3);
+      console.log(value3);
+      console.log(typeof value3);
+      console.log(value3.length);
+      console.log(value3.toFixed(2));
+
+      // Boolean to Number
+      value4 = true;
+      value4 = Number(value4);
+      console.log(value4);
+      console.log(typeof value4);
+      console.log(value4.length);
+
+      //To Array
+
+      value5 = "Zwe Htet Aung";
+      // console.log(Array.isArray(value5)); false
+      value5 = Array.from(value5);
+      console.log(Array.isArray(value5)); //true
+      console.log(value5);
+      console.log(typeof value5);
+      console.log(value5.length);
+
+      // cannot convert to array
+
+      value6 = Array.from(20);
+      value6 = Array.from(true);
+      value6 = {
+        music: "POP",
+        sport: "Football",
+      };
+      value6 = Array.from(value6);
+      console.log(value6);
+      console.log(typeof value6);
+      console.log(value6.length);
+    </script>
+  </body>
+</html>
+
+<!-- 13SM -->

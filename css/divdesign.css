@@ -1,0 +1,73 @@
+.firstdiv {
+  color: blue;
+  width: 200px;
+  height: 100px;
+  background-color: rgba(183, 65, 127, 1);
+  font-size: 20px;
+}
+
+.seconddiv {
+  color: white;
+  width: 300px;
+  height: 300px;
+  background-image: url("../img/cover/bg1.jpg");
+  /* background-color: orange; */
+  /* background-repeat: no-repeat; */
+  /* background-repeat: repeat-y; */
+  background-repeat: repeat-x;
+  background-position: center;
+  /* border: 2px;
+    border-style: solid;
+    border-color: red; */
+  border: 2px solid red;
+  background-color: aqua;
+}
+
+.thirddiv {
+  width: 300px;
+  height: 300px;
+  /* border: 3px solid red; */
+  color: white;
+  /* background: linear-gradient(red,orange,blue,green); */
+  /* background-image: linear-gradient(red,orange,blue,green); */
+  /* background: linear-gradient(#b09328,#cc185d); */
+  /* background: linear-gradient(rgba(190,236,127,1.00),rgba(32,39.127,1.00)); */
+  /* background: linear-gradient(
+        90deg,
+        red,
+        orange,
+        green
+    ); */
+  /* background: radial-gradient(red,green,blue); */
+  /* background: radial-gradient(#b09328,#cc185d,#cccccc); */
+  /* background: radial-gradient(rgba(190,236,127,1.00),rgba(32,39.127,1.00),rgb(206, 9, 42)); */
+  /* background: linear-gradient(
+        red 70%,
+        orange 30%
+    ); */
+  /* background: linear-gradient(
+        red 30%,
+        orange 0% 70%,
+        blue 0%
+        
+    ); */
+  background: linear-gradient(
+    45deg,
+    rgb(23, 0, 128) 20%,
+    rgb(0, 128, 49) 0% 70%,
+    rgb(128, 68, 0) 0% 10%
+  );
+}
+
+.fourdiv {
+  width: 200px;
+  height: 300px;
+  color: rgb(168, 27, 27);
+  background-image: linear-gradient(
+    45deg,
+    rgba(201, 49, 127, 0.3),
+    rgba(56, 208, 0, 0.2),
+    background-image: url(../img/cover/bg2.jpg),
+    background-repeat: no-repeat
+  );
+}

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Looping</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let obj = {
+        name: "William",
+        age: 30,
+      };
+
+      console.log(obj);
+      console.log(obj.name);
+      console.log(obj.age);
+
+      let arr = ["red", "green", "black"];
+
+      console.log(arr);
+      console.log(arr[0]);
+      console.log(arr[2]);
+
+      // 1. For Loop
+      //start    //end      //in/de
+      //for(statement1;statement2;statement3){
+      // code to executed;
+      //}
+
+      let i = 0;
+      for (i; i < 5; i++) {
+        console.log(i);
+      }
+      console.log("this is" + i);
+
+      for (var j = 5; j < 10; j++) {
+        //global scope
+        console.log("j value is  " + j);
+        // console.log(i);
+      }
+      console.log(j);
+
+      //   let name = "Kyaw Kyaw";
+      //   name = "Min Kyaw";
+      //   let name = "Kyaw Zaw";
+      //   console.log(name);
+
+      //   var name = "Kyaw Kyaw";
+      //   name = "Min Kyaw";
+      //   var name = "Kyaw Zaw";
+      //   console.log(name);
+
+      for (var t = 0; t <= 10; t++) {
+        console.log(t);
+      }
+      console.log("t value is  " + t);
+
+      for (let p = 0; p <= 10; p++) {
+        if (p === 2) {
+          console.log("my fav number is 2");
+        }
+        console.log(p);
+      }
+
+      for (var z = 0; z <= 10; z++) {
+        console.log(z);
+        if (z === 5) {
+          console.log("my fav number is 5");
+          break;
+        }
+        // console.log(z);
+      }
+      console.log("z value is  " + z);
+
+      for (var y = 0; y <= 10; y++) {
+        if (y === 2) {
+          console.log("my fav number is 2");
+          continue;
+        }
+        console.log(y);
+      }
+
+      for (var k = 10; k > 0; k--) {
+        console.log(k);
+      }
+      console.log(k + " outside value");
+
+      document.write("<h3>For Loop</h3>");
+
+      let myarrs = ["red", "green", "pink", "orange", "yellow"];
+      // for (let l = 0; l < 5; l++) {
+      //   console.log(myarrs[l]);
+      // }
+
+      for (let l = 0; l < myarrs.length; l++) {
+        console.log(myarrs[l]);
+      }
+
+      const peoples = [
+        { name: "Zwe Htet Aung", age: 19 },
+        { name: "Min Min", age: 20 },
+        { name: "Htet Kyaw", age: 15 },
+      ];
+
+      for (let m = 0; m < peoples.length; m++) {
+        document.write(
+          "Name  = " + peoples[m].name + "/ Age =  " + peoples[m].age + "</br>"
+        );
+      }
+
+      // 2. For In Loop
+
+      // for(key in object){
+      //   code to executed
+      // }
+
+      document.write("<h3>For In Loop</h3>");
+
+      let students = {
+        name: "William",
+        age: 25,
+        city: "Yangon",
+        job: "Web Developer",
+      };
+
+      for (key in students) {
+        // console.log(key);
+        // console.log(students);
+        // console.log(students.name);
+        //console.log(students.key);undefined
+        console.log(students[key]);
+        document.write(key + " = " + students[key] + "<br/>");
+      }
+
+      const ourteams = ["Kyaw Kyaw", "aung aung", "maung maung", "tun tun"];
+
+      for (index in ourteams) {
+        document.write("ourteams = " + ourteams[index] + "<br>");
+      }
+
+      let hays = "Hello Everyone";
+      for (hay in hays) {
+        document.write(hays[hay] + "<br>");
+      }
+
+      // 3. For Of Loop
+
+      // for(value of arrays){
+      //   code to executed
+      // }
+
+      document.write("<h3>For Of Loop</h3>");
+
+      const members = ["Su Su", "Myat Myat", "May May", "Aye Aye"];
+      for (member of members) {
+        document.write("Member = " + member + "<br/>");
+      }
+
+      let greeting = "Good Morning";
+      for (value of greeting) {
+        document.write(value + "<br/>");
+      }
+
+      // 4 . While Loop
+
+      //  start
+      //  while(condition){
+      //    before increase / decrease
+      //    code to exxcuted
+      //    after increase / decrease
+      //  }
+
+      document.write("<h3>While Loop</h3>");
+
+      let a = 0;
+      while (a < 10) {
+        document.write("value is " + a + "<br/>");
+        a++;
+      }
+
+      // while (a < 10) {
+      // a++;
+      //   document.write("value is " + a + "<br/>");
+      // }
+
+      document.write("value is " + a + "<br/>");
+
+      let b = 0;
+
+      while (b < 10) {
+        console.log("Number b value is = " + b);
+        b++;
+      }
+
+      console.log("outside b value = " + b);
+
+      let c = 0;
+
+      while (c < 10) {
+        c++;
+        console.log("Number c value is = " + c);
+      }
+
+      console.log("outside c value = " + c);
+
+      document.write("<h3>While Loop</h3>");
+
+      let mycolors = ["red", "green", "black", "grey", "blue", "pink"];
+      // console.log(mycolors);
+
+      let U = 0;
+
+      while (U < mycolors.length) {
+        // console.log(k);
+
+        document.write(mycolors[U] + "<br/>");
+
+        U++;
+      }
+
+      let laptops = [
+        {
+          cpu: "core i7",
+          ram: "8gb",
+          hdd: "1tb",
+        },
+      ];
+
+      // console.log(laptops[0].cpu);
+
+      let q = 0;
+
+      while (q < laptops.length) {
+        // console.log(q);
+
+        document.write(
+          "cpu is = " +
+            laptops[q].cpu +
+            "<br/>" +
+            "ram is = " +
+            laptops[q].ram +
+            "<br/>" +
+            "hdd is = " +
+            laptops[q].hdd +
+            "<br/>"
+        );
+
+        q++;
+      }
+
+      document.write("<hr/>");
+
+      // ----------------------------------------------------------------------------
+
+      // 5. Do While Loop
+
+      // start
+
+      // do{
+      // 	before print inc/dec
+      // 	code to be executed
+      // 	after print inc/dec
+      // }while(condition);
+
+      document.write("<h3>Do While Loop</h3>");
+
+      let m = 0;
+
+      do {
+        console.log("M result is = " + m);
+        m++;
+      } while (m < 10);
+
+      console.log("m outside value = " + m);
+
+      let n = 0;
+
+      do {
+        n++;
+        console.log("N result is = " + n);
+      } while (n < 10);
+
+      console.log("n outside value = " + m);
+
+      let colors = ["red", "green", "black", "grey", "blue", "pink"];
+      // console.log(colors);
+
+      let L = 0;
+
+      do {
+        // console.log(l);
+        document.write(colors[L] + "<br/>");
+        L++;
+      } while (L < colors.length);
+
+      document.write("<hr/>");
+
+      // ----------------------------------------------------------------------------
+
+      // 6. forEach
+
+      document.write("<h3>forEach Loop</h3>");
+
+      // mainarrs.forEach(function(value,index,array){
+      // 	code to be executed
+      // });
+
+      // colors.forEach(function(color){
+      // 	console.log(color);
+      // });
+
+      // colors.forEach(function(color,idx){
+      // 	console.log("index key is = " + idx + " Color is = "+color);
+      // });
+
+      // colors.forEach(function (color, idx, array) {
+      //   console.log("index key is = " + idx + " Color is = " + color);
+      //   console.log(array);
+      // });
+      let persons = ["Aung Aung", "Maw Maw", "Kyaw Kyaw", "Yu Yu", "Nu Nu"];
+
+      // Regular Function
+      persons.forEach(function (person) {
+        document.write(person + "<br/>");
+      });
+
+      //Arrow Function
+      persons.forEach((person) => {
+        document.write(person + "<br/>");
+      });
+
+      // 7. MAP
+
+      document.write("<h3>MAP</h3>");
+
+      const visitors = ["Paing Paing", "John Steve", "William Js", "Messi"];
+      visitors.forEach(function (visitor) {
+        // console.log(visitor);
+        console.log(`ForEach result " = Mr.${visitor}`);
+      });
+
+      visitors.map(function (visitor) {
+        // console.log(visitor);
+        console.log(`Map result " = Mr.${visitor}`);
+      });
+
+      let myguys = visitors.forEach(function (visitor) {
+        return visitor;
+      });
+
+      console.log(myguys); //undefined
+
+      // let guys = visitors.map(function (visitor) {
+      //   return visitor;
+      // });
+
+      // let guys = visitors.map((visitor) => {
+      //   return visitor;
+      // });
+
+      // let guys = visitors.map((visitor) => {
+      //   return visitor;
+      // });
+
+      let guys = visitors.map((visitor) => visitor);
+      console.log(guys); //undefined
+      console.log(typeof guys); // (Object) array
+
+      const users = [
+        { id: 1, name: "Zwe Htet" },
+        { id: 2, name: "Zaw Zaw" },
+        { id: 3, name: "Min Min" },
+      ];
+
+      // console.log(users[0].name);
+
+      let getNames = users.map((user) => user.name);
+      users.map((user, idx) => {
+        document.write(
+          `Index is ${idx} = ID is ${user.id} and name is ${user.name}` +
+            "<br/>"
+        );
+      });
+      console.log(getNames);
+
+      let game = "Chess";
+      let winners = ["Mr Tin", "Mr Pin", "Mr Kin"];
+
+      let getResult = winners.map((winner, idx) => ({
+        name: winner,
+        sport: game,
+        prize: idx + 1,
+      }));
+      console.log(getResult);
+
+      // 8 . filter
+
+      document.write("<h3>Filter</h3>");
+
+      let peopleAges = [12, 45, 11, 32, 21, 76, 89, 34, 23, 10, 22];
+
+      // let getOver18 = peopleAges.filter(age=>{
+      //   return age < 18
+      // })
+      let getOver18 = peopleAges.filter((age) => age < 18);
+
+      console.log(getOver18);
+      console.log(typeof getOver18);
+    </script>
+  </body>
+</html>
+
+<!-- 27FT -->

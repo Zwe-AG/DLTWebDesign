@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Window Object</title>
+    <style type="text/css">
+      @media print {
+        * {
+          visibility: hidden;
+        }
+        #printarea * {
+          visibility: visible;
+        }
+      }
+      @page {
+        /* size: portrait; */
+        size: landscape;
+        /* size: auto; */
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="printme()">Print</button>
+    <button onclick="reloadme()">Refresh</button>
+
+    <hr />
+    <div id="printarea">
+      <div>
+        <h1>This is Paragraph1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quis
+          nobis ut impedit quas adipisci repudiandae repellendus nesciunt
+          consectetur quae, labore minus! Recusandae odio voluptatum ea vel
+          doloribus aliquam magnam inventore facilis numquam qui praesentium,
+          exercitationem veniam consequatur, dolorum sint mollitia perferendis
+          est quo dicta consequuntur adipisci optio ad illo?
+        </p>
+      </div>
+      <div>
+        <h1>This is Paragraph2</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quis
+          nobis ut impedit quas adipisci repudiandae repellendus nesciunt
+          consectetur quae, labore minus! Recusandae odio voluptatum ea vel
+          doloribus aliquam magnam inventore facilis numquam qui praesentium,
+          exercitationem veniam consequatur, dolorum sint mollitia perferendis
+          est quo dicta consequuntur adipisci optio ad illo?
+        </p>
+      </div>
+    </div>
+    <div>
+      <h1>This is Paragraph3</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quis nobis
+        ut impedit quas adipisci repudiandae repellendus nesciunt consectetur
+        quae, labore minus! Recusandae odio voluptatum ea vel doloribus aliquam
+        magnam inventore facilis numquam qui praesentium, exercitationem veniam
+        consequatur, dolorum sint mollitia perferendis est quo dicta
+        consequuntur adipisci optio ad illo?
+      </p>
+    </div>
+
+    <!-- <div style="margin-top: 1000px"></div> -->
+    <br />
+    <script type="text/javascript">
+      //Window Object
+
+      //Alert
+      //   window.alert("Hello World");
+
+      // Prompt
+      //   const input = prompt("Write Something");
+      //   console.log(input);
+
+      // Confirm
+      //   if (confirm("Are U sure")) {
+      //     console.log("Yes");
+      //   } else {
+      //     console.log("Ohh Sorry");
+      //   }
+
+      // Print
+      // window.print();
+
+      function printme() {
+        // console.log("Hay");
+        window.print();
+      }
+
+      let val;
+      val = window.outerWidth;
+      console.log("this is outer width = ", val);
+      val = window.outerHeight;
+      console.log("this is outer height = ", val);
+
+      let val1;
+      val1 = window.innerWidth;
+      console.log("this is inner width = ", val1);
+      val1 = window.innerHeight;
+      console.log("this is inner height = ", val1);
+
+      let val2;
+      val2 = window.scrollY;
+      console.log("Scroll Y value is ", val2);
+
+      let val3;
+      val3 = window.scrollX;
+      console.log("Scroll X value is ", val3);
+
+      //   Redirect
+
+      //   console.log(window);
+      //   console.log(window.location);
+      //   window.location.href = "https://google.com";
+
+      //   Reload
+
+      //   window.location.reload();
+
+      function reloadme() {
+        window.location.reload();
+      }
+
+      // Navigator Object
+
+      //   console.log(window.navigator)
+      document.write(
+        "navaigator.userAgent result  = ",
+        window.navigator.userAgent + "<br/>"
+      );
+      document.write(
+        "navaigator.cookieEnabled result  = ",
+        window.navigator.cookieEnabled + "<br/>"
+      );
+      document.write(
+        "navaigator.language result  = ",
+        window.navigator.language + "<br/>"
+      );
+      document.write(
+        "navaigator.onLine result  = ",
+        window.navigator.onLine + "<br/>"
+      ); // internet connection on = true and internet connection on = false
+    </script>
+  </body>
+</html>
+
+<!-- 4WO -->
